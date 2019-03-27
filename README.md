@@ -16,5 +16,7 @@ To interact with the page, users can click on pie charts that interest them, whi
 This dataset will not only give users broad information about car crashes, but it will allow users to see more complex relationships that exist between different attributes of car crashes that the dataset provides. Users can see links between, for example, model year and primary cause of crash, which might reveal interesting things that would lead to more questions.
 
 ## D3 Utilization
+We will be using [D3.js](www.d3js.org) to manipulate the DOM elements and have real-time updated visuals. The home page will have a [Population Pyramid](https://bl.ocks.org/mbostock/4062085) or a [Collapsible Force Layout](https://bl.ocks.org/mbostock/4062085) of various information such as car brand, model, year, etc. 
 
 ## Visualization
+Data will be represented in pie charts or other types of charts. Users will be able to interact with the charts to see a more detailed version or change the category that they are viewing.
