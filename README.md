@@ -21,4 +21,4 @@ We will be using [D3.js](www.d3js.org) to manipulate the DOM elements and have r
 ## Visualization
 Data will be represented in pie charts or other types of charts. Users will be able to interact with the charts to see a more detailed version or change the category that they are viewing.
 
-<img src="./determinants--marderT_canaleB_liuA_hasanA/chart.jpg" width="500" height="500">
+![Visualization](https://raw.githubusercontent.com/TimMarder/determinants--marderT_canaleB_liuA_hasanA/master/chart.jpg)
