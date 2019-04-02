@@ -1,7 +1,6 @@
-import d3;
-
+var data = [0.49, 0.1, 0.13, 0.08, 0.09, 0.11];
 var svg = d3.select("svg");
-var width = svg.attr("width;
+var width = svg.attr("width");
 var height = svg.attr("height");
 var radius = Math.min(width, height) / 2;
 var c = svg.append("g").attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
