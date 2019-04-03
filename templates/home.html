@@ -6,6 +6,7 @@
 
       <title> {% block title %} {% endblock %}</title>
 
+      <link rel="stylesheet" href="../static/home.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     </head>
@@ -24,9 +25,79 @@
 
       </div>
 
-      <div class="row">
+      <div class="row" style="height: 1000px">
 
-        <nav class="nav flex-column col-xs-5 col-sm-3 col-md-2" style = "background-color:#F2D8D8;">
+        <div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+
+        <div id="dismiss">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+
+        <div class="sidebar-header">
+            <h3>Bootstrap Sidebar</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <p>Dummy Heading</p>
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">About</a>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="content">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left"></i>
+                    <span>Toggle Sidebar</span>
+                </button>
+            </div>
+        </nav>
+    </div>
+    <!-- Dark Overlay element -->
+    <div class="overlay"></div>
+</div>
+
+        <!-- <nav class="nav flex-column col-xs-5 col-sm-3 col-md-2" style = "background-color:#F2D8D8;">
+
           Data by:
           <a class="nav-link" href="#">Model Year</a>
           <a class="nav-link" href="#">Brand</a>
@@ -35,7 +106,7 @@
           <a class="nav-link" href="#">Human vs. Environmental</a>
           <a class="nav-link" href="#">Weather Related</a>
           <a class="nav-link" href="#">Type of Car</a>
-        </nav>
+        </nav> -->
 
         <div class= "col-sm-7 col-sm-9 col-md-10">
 
@@ -45,11 +116,7 @@
 
           <br>
 
-          <svg width="100%" height="100%">
-
-
-
-          </svg>
+          <div class = "row" id = "home">
 
           {%block body%}
 
@@ -71,7 +138,7 @@
 
             <div class = "row" style = "height:20"></div>
 
-             &copy; Copyright DETERMINANTS
+            <div class="footer"> &copy; Copyright DETERMINANTS <div>
 
           <div class = "row" style = "height:20"></div>
 

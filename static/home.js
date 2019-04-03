@@ -542,7 +542,7 @@ for(var cat in crashes){
           color = d3.scaleOrdinal(d3.schemeCategory10)
 
   data = d3.entries(data)
-
+//create a div within div class home and create a svg within that new div
   var svg = d3.selectAll('body').select('svg')
                                   .attr("width", w)
                                   .attr('height', h)
@@ -572,7 +572,9 @@ for(var cat in crashes){
 svg = d3.select("body").select("svg")
 svg.attr("width", "100%")
 svg.attr("height", "100%")
-groups = svg.selectAll("g");
-for(i = 0; i < groups.length; i++){
-  groups[i].attr("transform", "translate(" + i * 400 + ", 150)");
-}
+//groups = svg.selectAll("g");
+//for(i = 0; i < groups.length; i++){
+  //groups[i].attr("transform", "translate(" + i * 400 + ", 150)");
+//}
+var groups = document.getElementsByTagName("g")
+groups[1].setAttribute("transform", "translate(500, 150)")
