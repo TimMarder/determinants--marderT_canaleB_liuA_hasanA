@@ -25,12 +25,47 @@ ahnafH -- 2019-03-26 22:08
 Created devlog.txt file.
 ==============================================================
 
+britniC -- 2019-03-26 22:40
+--------------------------------------------------------------
+Finished description and explanation in README
+==============================================================
+
+britniC -- 2019-03-28 12:30
+--------------------------------------------------------------
+Trying to attach image in README to show design
+==============================================================
+
 alexL -- 2019-03-29 10:30
 --------------------------------------------------------------
 Changed organization and worked on deliverables
 ==============================================================
 
+britniC -- 2019-04-01 10:20
+--------------------------------------------------------------
+Beginning to try to add pie charts, trying to make d3 code from
+online work. Having trouble.
+==============================================================
+
 alexL -- 2019-04-02 12:30
 --------------------------------------------------------------
-Created and worked on css 
+Created and worked on css
+==============================================================
+
+britniC -- 2019-04-02 4:21
+--------------------------------------------------------------
+Able to successfully render a pie chart, but it is messed up.
+Continuing to troubleshoot.
+==============================================================
+
+britniC -- 2019-04-03 10:36
+--------------------------------------------------------------
+Hardcoded metadata from JSON file of dataset into JS, was able
+to make pie charts reflect data from the metadata, however the
+pie charts are all stacked. Will fix later.
+==============================================================
+
+britniC -- 2019-04-03 10:36
+--------------------------------------------------------------
+Made all pie charts show up by giving each its own svg. Some
+appear to have same data.
 ==============================================================
