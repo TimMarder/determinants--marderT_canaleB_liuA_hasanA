@@ -560,7 +560,9 @@ for(var cat in crashes){
                   .attr('fill', (d, i)=>color(i))
                   .attr('d', arc)
                   .attr('stroke', 'white')
-                  .attr('stroke-width', '1px')
+                  .attr('stroke-width', function() {
+		 	return `${Math.ceil(10 / data.length)}px`
+})
                   .append('text')
                   .text((d)=>{ console.log(d); return d.data.value.name})
   }
