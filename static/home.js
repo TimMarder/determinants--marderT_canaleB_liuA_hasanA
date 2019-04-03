@@ -1,7 +1,7 @@
 var w = 300,                        //width
     h = 300,                            //height
     r = 100,                            //radius
-    color = d3.schemeBlues;     //builtin range of colors
+    color = d3.schemeReds;     //builtin range of colors
 
     data = [{"label":"one", "value":20},
             {"label":"two", "value":50},
@@ -28,7 +28,7 @@ var w = 300,                        //width
                 .attr("class", "slice");    //allow us to style things in the slices (like text)
 
         arcs.append("svg:path")
-                .attr("fill", function(d, i) { return color[i]; } ) //set the color for each slice to be chosen from the color function defined above
+                .attr("fill", function(d, i) { return color[i+3]; } ) //set the color for each slice to be chosen from the color function defined above
                 .attr("d", arc);                                    //this creates the actual SVG path using the associated data (pie) with the arc drawing function
 
         arcs.append("svg:text")                                     //add a label to each slice
