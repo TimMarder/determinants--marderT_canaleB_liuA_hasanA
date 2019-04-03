@@ -529,8 +529,9 @@ var crashes = {"Type": dict,
 for(var cat in crashes){
   //var data = [{"value":30, 'name':'one'}, {"value":50, 'name':'two'}, {"value": 20, 'name':'three'}, {'value':40, 'name':'four'}]
   //var cat = "Primary";
-  var info = crashes[cat]
-  var data = []
+  console.log(cat)
+  let info = crashes[cat]
+  let data = []
   for(i = 0; i < info.length; i++){
     data[i] = {"value":info[i]["count"], 'name': i}
   }
@@ -543,7 +544,7 @@ for(var cat in crashes){
 
   data = d3.entries(data)
 //create a div within div class home and create a svg within that new div
-  var svg = d3.selectAll('body').select('svg')
+  let svg = d3.selectAll('body').selectAll('div').select("#home").insert("svg")
                                   .attr("width", w)
                                   .attr('height', h)
                                   .append('g')
@@ -569,12 +570,12 @@ for(var cat in crashes){
   update()
 }
 
-svg = d3.select("body").select("svg")
-svg.attr("width", "100%")
-svg.attr("height", "100%")
+//svg = d3.select("body").select("svg")
+//svg.attr("width", "100%")
+//svg.attr("height", "100%")
 //groups = svg.selectAll("g");
 //for(i = 0; i < groups.length; i++){
   //groups[i].attr("transform", "translate(" + i * 400 + ", 150)");
 //}
-var groups = document.getElementsByTagName("g")
-groups[1].setAttribute("transform", "translate(500, 150)")
+//var groups = document.getElementsByTagName("g")
+//groups[1].setAttribute("transform", "translate(500, 150)")
