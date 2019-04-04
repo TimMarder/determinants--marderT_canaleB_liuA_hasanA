@@ -550,16 +550,14 @@ for(var cat in crashes){
                                   .append('g')
                                       .attr('transform', `translate(${w / 2}, ${h / 2})`);
 
+
+
   console.log("SVG")
   console.log(svg)
 
   const pie = d3.pie().value((d)=>{console.log(d); return d.value.value}).sort(null)
 
   const arc = d3.arc().innerRadius(0).outerRadius(r)
-
-  let text = svg.select("_groups").selectAll("g").insert("text").enter().append("text")
-
-  let textLabels = text.attr("x", 0).attr("y", 0).text(cat).attr("font-family", "sans-serif").attr("font-size", "20px").attr("fill", "black");
 
   function update() {
       const path = svg.selectAll('path')
@@ -575,6 +573,9 @@ for(var cat in crashes){
                   .text((d)=>{ console.log(d); return d.data.value.name})
   }
   update()
+  let text = svg.insert("text").enter().append("text")
+
+  let textLabels = text.attr("x", 0).attr("y", 0).text(cat).attr("font-family", "sans-serif").attr("font-size", "20px").attr("fill", "black");
 }
 
 //svg = d3.select("body").select("svg")
