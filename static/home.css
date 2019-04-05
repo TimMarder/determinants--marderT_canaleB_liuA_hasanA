@@ -1,3 +1,4 @@
+/*  FOOTER  */
 .footer {
   position: fixed;
   left: 0;
@@ -7,11 +8,11 @@
   color: black;
   text-align: center;
 }
-
+/*  BODY  */
 body {
   font-family: "Lato", sans-serif;
 }
-
+/*  SIDENAV  */
 .sidenav {
   height: 100%;
   width: 0;
@@ -68,4 +69,25 @@ body {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+/*  PARRALLAX SCROLLING EFFECT  */
+.parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 }

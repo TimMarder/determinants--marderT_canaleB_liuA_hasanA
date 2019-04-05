@@ -75,7 +75,12 @@ alexL -- 2019-04-04 12:35
 Created the sidebar and began working on making it open and close
 ==============================================================
 
-alexL -- 2019-04-05 11:05
+alexL -- 2019-04-05 9:05
 --------------------------------------------------------------
 Finished making sidebar opaque and working on making it sticky
+==============================================================
+
+alexL -- 2019-04-05 12:17
+--------------------------------------------------------------
+Finished working on sidebar and made changes to the aesthetics of the footer
 ==============================================================
