@@ -3,8 +3,8 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
-  color: white;
+  background-color: skyblue;
+  color: black;
   text-align: center;
 }
 
@@ -15,7 +15,6 @@ body {
 .sidenav {
   height: 100%;
   width: 0;
-  position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
@@ -39,12 +38,25 @@ body {
 }
 
 .sidenav .closebtn {
-  position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
 }
+/*
+.content {
+  padding: 16px;
+} */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/*
+.sticky + .content {
+  padding-top: 60px;
+} */
 
 #main {
   transition: margin-left .5s;

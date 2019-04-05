@@ -578,6 +578,9 @@ for(var cat in crashes){
   let textLabels = text.attr("x", 0).attr("y", 0).text(cat).attr("font-family", "sans-serif").attr("font-size", "20px").attr("fill", "black");
 }
 
+// NAVBAR STUFFS
+
+// opening and closing
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
@@ -589,6 +592,22 @@ function closeNav() {
   document.getElementById("main").style.marginLeft= "0";
   document.body.style.backgroundColor = "white";
 }
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("mySidenav");
+var sticky = navbar.offsetTop;
+
+// sticky for scrolling
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+// DONE WITH NAVBAR STUFFS
 
 //svg = d3.select("body").select("svg")
 //svg.attr("width", "100%")
