@@ -573,9 +573,9 @@ for(var cat in crashes){
                   .text((d)=>{ console.log(d); return d.data.value.name})
   }
   update()
-  let text = svg.insert("text").enter().append("text")
-
-  let textLabels = text.attr("x", 0).attr("y", 0).text(cat).attr("font-family", "sans-serif").attr("font-size", "20px").attr("fill", "black");
+  let text = svg.insert("text").data(crashes).enter().append("text")
+  console.log("data!!!")
+  let textLabels = text.attr("x", 0).attr("y", 0).text((d)=>{console.log(d);return d[cat];}).attr("font-family", "sans-serif").attr("font-size", "20px").attr("fill", "black");
 }
 
 // NAVBAR STUFFS
