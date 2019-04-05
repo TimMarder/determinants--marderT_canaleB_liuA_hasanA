@@ -22,3 +22,37 @@ We will be using [D3.js](https://d3js.org/) to manipulate the DOM elements and h
 Data will be represented in pie charts or other types of charts. Users will be able to interact with the charts to see a more detailed version or change the category that they are viewing.
 
 ![Visualization](https://raw.githubusercontent.com/TimMarder/determinants--marderT_canaleB_liuA_hasanA/master/chart.jpg)
+
+## Installation & Launch Instructions
+
+1. Clone this repo
+```
+$ git clone https://github.com/TimMarder/determinants--marderT_canaleB_liuA_hasanA.git
+```
+
+2. Activate your virtual environment
+```
+$ python3 -m venv venv
+$ . venv/bin/activate
+```
+
+3. Enter directory
+```
+$ cd determinants--marderT_canaleB_liuA_hasanA
+```
+
+4. Install the dependencies
+```
+$ pip install -r requirements.txt
+```
+
+5. Run app
+```
+$ python app.py
+```
+
+6. Open your web browser and open `localhost:5000`
+
+7. Use <kbd> CTRL </kbd> + <kbd> C </kbd> to terminate your session
+
+8. Type `deactivate` to deactivate your virtual environment
