@@ -535,8 +535,8 @@ for(var cat in crashes){
   for(i = 0; i < info.length; i++){
     data[i] = {"value":info[i]["count"], 'name': i}
   }
-  console.log(cat)
-  console.log(data)
+  //console.log(cat)
+  //console.log(data)
   const w = 300,
           h = 300,
           r = 100
@@ -548,7 +548,12 @@ for(var cat in crashes){
                                   .attr("width", w)
                                   .attr('height', h)
                                   .append('g')
-                                      .attr('transform', `translate(${w / 2}, ${h / 2})`)
+                                      .attr('transform', `translate(${w / 2}, ${h / 2})`);
+
+
+
+  console.log("SVG")
+  console.log(svg)
 
   const pie = d3.pie().value((d)=>{console.log(d); return d.value.value}).sort(null)
 
@@ -568,6 +573,9 @@ for(var cat in crashes){
                   .text((d)=>{ console.log(d); return d.data.value.name})
   }
   update()
+  let text = svg.insert("text").enter().append("text")
+
+  let textLabels = text.attr("x", 0).attr("y", 0).text(cat).attr("font-family", "sans-serif").attr("font-size", "20px").attr("fill", "black");
 }
 
 function openNav() {
