@@ -25,34 +25,34 @@ Data will be represented in pie charts or other types of charts. Users will be a
 
 ## Installation & Launch Instructions
 
-1. Clone this repo
+1. Clone this repo 
 ```
 $ git clone https://github.com/TimMarder/determinants--marderT_canaleB_liuA_hasanA.git
 ```
 
-2. Activate your virtual environment
+2. Activate your virtual environment 
 ```
 $ python3 -m venv venv
 $ . venv/bin/activate
 ```
 
-3. Enter directory
+3. Enter directory 
 ```
 $ cd determinants--marderT_canaleB_liuA_hasanA
 ```
 
-4. Install the dependencies
+4. Install the dependencies 
 ```
 $ pip install -r requirements.txt
 ```
 
-5. Run app
+5. Run app 
 ```
 $ python app.py
 ```
 
-6. Open your web browser and open `localhost:5000`
+6. Open your web browser and open `localhost:5000` 
 
-7. Use <kbd> CTRL </kbd> + <kbd> C </kbd> to terminate your session
+7. Use <kbd> CTRL </kbd> + <kbd> C </kbd> to terminate your session 
 
-8. Type `deactivate` to deactivate your virtual environment
+8. Type `deactivate` to deactivate your virtual environment 
