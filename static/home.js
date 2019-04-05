@@ -595,7 +595,7 @@ function closeNav() {
 
 window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("mySidenav");
+var navbar = document.getElementById("navbutt");
 var sticky = navbar.offsetTop;
 
 // sticky for scrolling
