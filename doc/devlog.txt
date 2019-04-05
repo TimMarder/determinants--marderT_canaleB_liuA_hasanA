@@ -69,3 +69,13 @@ britniC -- 2019-04-03 10:36
 Made all pie charts show up by giving each its own svg. Some
 appear to have same data.
 ==============================================================
+
+alexL -- 2019-04-04 12:35
+--------------------------------------------------------------
+Created the sidebar and began working on making it open and close
+==============================================================
+
+alexL -- 2019-04-05 11:05
+--------------------------------------------------------------
+Finished making sidebar opaque and working on making it sticky
+==============================================================
