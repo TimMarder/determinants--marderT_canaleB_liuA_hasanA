@@ -15,6 +15,7 @@ body {
 .sidenav {
   height: 100%;
   width: 0;
+  position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
@@ -38,6 +39,7 @@ body {
 }
 
 .sidenav .closebtn {
+  position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
