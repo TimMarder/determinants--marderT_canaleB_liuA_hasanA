@@ -3,17 +3,15 @@
   <html>
 
     <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../static/home.css">
+      <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
 
       <title> {% block title %} {% endblock %}</title>
-
-      <link rel="stylesheet" href="../static/home.css">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     </head>
 
     <body>
-
-      <div class ="row" style="background-color:#DC9596">
 
         <div class = "col-xs-5 col-sm-3 col-md-2"></div>
 
@@ -24,77 +22,17 @@
         </div>
 
       </div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
 
-      <div class="row" style="height: 1000px">
+        <div id="main">
 
-        <div class="wrapper">
-    <!-- Sidebar -->
-    <nav id="sidebar">
-
-        <div id="dismiss">
-            <i class="fas fa-arrow-left"></i>
-        </div>
-
-        <div class="sidebar-header">
-            <h3>Bootstrap Sidebar</h3>
-        </div>
-
-        <ul class="list-unstyled components">
-            <p>Dummy Heading</p>
-            <li class="active">
-                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
-                <ul class="collapse list-unstyled" id="homeSubmenu">
-                    <li>
-                        <a href="#">Home 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Home 2</a>
-                    </li>
-                    <li>
-                        <a href="#">Home 3</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">About</a>
-                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
-                <ul class="collapse list-unstyled" id="pageSubmenu">
-                    <li>
-                        <a href="#">Page 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Page 2</a>
-                    </li>
-                    <li>
-                        <a href="#">Page 3</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Portfolio</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Page Content -->
-    <div id="content">
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-
-                <button type="button" id="sidebarCollapse" class="btn btn-info">
-                    <i class="fas fa-align-left"></i>
-                    <span>Toggle Sidebar</span>
-                </button>
-            </div>
-        </nav>
-    </div>
-    <!-- Dark Overlay element -->
-    <div class="overlay"></div>
-</div>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
         <!-- <nav class="nav flex-column col-xs-5 col-sm-3 col-md-2" style = "background-color:#F2D8D8;">
 
@@ -134,20 +72,16 @@
 
         <div class ="col"></div>
 
-        <div class ="col-sm-10 col-lg-8">
-
-            <div class = "row" style = "height:20"></div>
 
             <div class="footer"> &copy; Copyright DETERMINANTS <div>
 
-          <div class = "row" style = "height:20"></div>
 
         </div>
 
-        <div class ="col-sm-1 col-lg-2"></div>
+      </div>
 
         <script src="https://d3js.org/d3.v5.min.js"></script>
-        <script src = "static/home.js"></script>
+        <script src = "../static/home.js"></script>
 
     </body>
 
