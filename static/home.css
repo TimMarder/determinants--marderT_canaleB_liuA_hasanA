@@ -74,10 +74,10 @@ body {
 /*  PARRALLAX SCROLLING EFFECT  */
 .parallax {
   /* The image used */
-  background-image: url("img_parallax.jpg");
+  background-image: url("http://img.youtube.com/vi/RNwsj7jGjBY/maxresdefault.jpg");
 
   /* Set a specific height */
-  height: 500px;
+  height: 400px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
