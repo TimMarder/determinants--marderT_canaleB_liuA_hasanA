@@ -84,3 +84,9 @@ alexL -- 2019-04-05 12:17
 --------------------------------------------------------------
 Finished working on sidebar and made changes to the aesthetics of the footer
 ==============================================================
+
+ahnafH -- 2019-04-07 16:05
+--------------------------------------------------------------
+Finished expansion script. Rolled back to previous version to fix merge 
+conflict being committed. Added event listeners to pie charts.
+==============================================================
