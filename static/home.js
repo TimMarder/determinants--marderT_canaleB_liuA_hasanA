@@ -11,6 +11,25 @@ for (var a in crashes) {
     Data[i] = { "value":ab[i]['count'], 'name': ab[i]['item']}
   }
 }
+/**
+ * test -- Dictionary
+ * "value" -- number of crashes
+ * "name" -- category
+ * "total" -- total in general category
+ */
+var test = {}
+for (var q in crashes) {
+  var total = 0
+  for (i = 0; i < a.length; i++) {
+    total += a[i]['count']
+  }
+  let a = crashes[q]
+  var tmp = []
+  for (i = 0; i < a.length; i++) {
+    tmp[i] = { "value": a[i]['count'], 'name':ab[i]['item'], "total": total}
+  }
+  test[q] = tmp
+}
 Data = d3.entries(Data)
 console.log(Data)
   for(var cat in crashes){
