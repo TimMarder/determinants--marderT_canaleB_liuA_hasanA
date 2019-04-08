@@ -87,6 +87,14 @@ Finished working on sidebar and made changes to the aesthetics of the footer
 
 ahnafH -- 2019-04-07 16:05
 --------------------------------------------------------------
-Finished expansion script. Rolled back to previous version to fix merge 
+Finished expansion script. Rolled back to previous version to fix merge
 conflict being committed. Added event listeners to pie charts.
+==============================================================
+
+ahnafH -- 2019-04-08 01:36:38
+--------------------------------------------------------------
+Worked on getting text to show up. Now all the pie charts created have
+the category underneath them. Sections are still unlabeled. Universalized
+data used. Svg backgrounds change accordingly to the color of background.
+Fixed header. Other small aesthetics changes.
 ==============================================================
