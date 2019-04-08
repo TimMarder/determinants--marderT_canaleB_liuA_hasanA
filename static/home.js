@@ -20,13 +20,13 @@ for (var a in crashes) {
 var test = {}
 for (var q in crashes) {
   var total = 0
-  for (i = 0; i < a.length; i++) {
-    total += a[i]['count']
-  }
   let a = crashes[q]
   var tmp = []
-  for (i = 0; i < a.length; i++) {
-    tmp[i] = { "value": a[i]['count'], 'name':ab[i]['item'], "total": total}
+  for (var i = 0; i < a.length; i++) {
+    total += a[i]['count']
+  }
+  for (var i = 0; i < a.length; i++) {
+    tmp[i] = { "value": a[i]['count'], 'name':a[i]['item'], "total": total}
   }
   test[q] = tmp
 }
